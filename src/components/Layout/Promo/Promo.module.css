@@ -1,0 +1,26 @@
+.section {
+  position: absolute;
+
+  display: flex;
+  justify-content: center;
+
+  max-width: 1440px;
+  min-width: 350px;
+}
+.wrapper {
+  width: 50%;
+  padding: 10px;
+  background-color: #2d376cdb;
+  /* color: #e7c200; */
+  color: #f6f1f5;
+}
+.title {
+  margin: 0;
+  font-weight: 700;
+  font-size: 1.3em;
+  color: #f6f1f5;
+}
+.text {
+  font-size: 0.8em;
+  margin: 5px 0 0 0;
+}

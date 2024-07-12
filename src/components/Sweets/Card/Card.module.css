@@ -1,0 +1,29 @@
+.card {
+  display: flex;
+  align-items: center;
+
+  padding: 10px;
+  margin-top: 5px;
+
+  background-color: #f6f1f5;
+  color: rgb(10, 10, 14);
+}
+.img {
+  width: 70px;
+  height: 70px;
+  object-fit: cover;
+}
+.wrapper {
+  margin-left: 30px;
+}
+.title {
+  margin: 0;
+  color: #171412;
+  font-size: 1em;
+  line-height: 1.5em;
+}
+.price {
+  margin: 0;
+  color: #877563;
+  font-size: 0.85em;
+}

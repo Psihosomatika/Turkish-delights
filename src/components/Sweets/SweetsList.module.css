@@ -1,0 +1,17 @@
+.section {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+  background-image: url(../../assets/img/list-pattern.jpeg);
+  background-size: contain;
+}
+.wrapper {
+  max-width: 1440px;
+  min-width: 350px;
+  width: 53%;
+  padding: 20px;
+  min-height: 250px;
+  margin-top: 30px;
+
+  list-style-type: none;
+}
