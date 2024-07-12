@@ -22,7 +22,7 @@
   font-size: 1em;
   line-height: 1.5em;
 }
-.price {
+.text {
   margin: 0;
   color: #877563;
   font-size: 0.85em;
@@ -32,23 +32,65 @@
   margin-left: auto;
 }
 .input {
-  max-width: 50px;
-  border: none;
+  position: absolute;
+
+  max-width: 20px;
+  opacity: 0;
+  /* display: none; */
+}
+.label {
+  position: relative;
+
+  display: flex;
+  justify-content: center;
+  min-width: 20px;
+
+  background-color: #cd7e35;
+  color: #171412;
+  padding: 2px 0;
 }
 .button {
-  border: none;
-  background-color: #cd7e35;
-  width: 20px;
-  height: 20px;
   display: flex;
   justify-content: center;
   align-items: center;
+  width: 20px;
+  min-height: 20px;
+  padding: 2px;
+
+  background-color: #cd7e35;
+  border: none;
+  cursor: pointer;
+}
+.button:nth-child(1)::before {
+  content: "";
+  position: absolute;
+  width: 10px;
+  height: 2px;
+  background-color: #171412;
+  cursor: pointer;
+}
+.button:last-child::before {
+  content: "";
+  position: absolute;
+  width: 10px;
+  height: 2px;
+  background-color: #171412;
+  cursor: pointer;
+}
+.button:last-child::after {
+  content: "";
+  width: 10px;
+  height: 2px;
+  background-color: #171412;
+  transform: rotate(90deg);
+  position: absolute;
+  cursor: pointer;
 }
 .bottom {
   display: flex;
   justify-content: center;
 }
-.label {
+/* .label {
   color: #877563;
   font-size: 0.85em;
-}
+} */

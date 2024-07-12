@@ -8,26 +8,26 @@ const Card = ({ item }) => {
       <img src={item.img} alt="сладости" className={styles.img} />
       <div className={styles.wrapper}>
         <h3 className={styles.title}>{item.name}</h3>
-        <p className={styles.price}>{`$${formatedPrice}`}</p>
+        <p className={styles.text}>{`$${formatedPrice}`}</p>
       </div>
       <form className={styles.form}>
-        <label htmlFor={item.id} className={styles.label}>
+        <p htmlFor={item.id} className={styles.text}>
           количество
-        </label>
+        </p>
         <div className={styles.bottom}>
-          <button className={styles.button} type="button">
-            -
-          </button>
-          <input
-            type="number"
-            className={styles.input}
-            min="0"
-            max="100"
-            id={item.id}
-          />
-          <button type="button" className={styles.button}>
-            +
-          </button>
+          <button className={styles.button} type="button"></button>
+          <label className={styles.label}>
+            0
+            <input
+              type="number"
+              className={styles.input}
+              min="0"
+              max="100"
+              id={item.id}
+            />
+          </label>
+
+          <button type="button" className={styles.button}></button>
         </div>
       </form>
     </li>
