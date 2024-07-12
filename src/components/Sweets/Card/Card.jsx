@@ -10,6 +10,26 @@ const Card = ({ item }) => {
         <h3 className={styles.title}>{item.name}</h3>
         <p className={styles.price}>{`$${formatedPrice}`}</p>
       </div>
+      <form className={styles.form}>
+        <label htmlFor={item.id} className={styles.label}>
+          количество
+        </label>
+        <div className={styles.bottom}>
+          <button className={styles.button} type="button">
+            -
+          </button>
+          <input
+            type="number"
+            className={styles.input}
+            min="0"
+            max="100"
+            id={item.id}
+          />
+          <button type="button" className={styles.button}>
+            +
+          </button>
+        </div>
+      </form>
     </li>
   );
 };

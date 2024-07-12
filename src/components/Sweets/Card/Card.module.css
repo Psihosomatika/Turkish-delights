@@ -27,3 +27,28 @@
   color: #877563;
   font-size: 0.85em;
 }
+.form {
+  /* border: 1px solid red; */
+  margin-left: auto;
+}
+.input {
+  max-width: 50px;
+  border: none;
+}
+.button {
+  border: none;
+  background-color: #cd7e35;
+  width: 20px;
+  height: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.bottom {
+  display: flex;
+  justify-content: center;
+}
+.label {
+  color: #877563;
+  font-size: 0.85em;
+}
