@@ -16,4 +16,5 @@ body {
   font-family: "Noto Serif";
   font-weight: 500;
   background-color: #f6f1f5;
+  position: relative;
 }

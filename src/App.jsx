@@ -2,6 +2,7 @@
 import Foto from "./components/Layout/Foto/Foto";
 import Header from "./components/Layout/Header/Header";
 import SweetsList from "./components/Sweets/SweetsList";
+import Cart from "./components/Cart/Cart";
 
 function App() {
   return (
@@ -11,6 +12,7 @@ function App() {
         <Foto />
         <SweetsList />
       </main>
+      <Cart />
     </>
   );
 }
